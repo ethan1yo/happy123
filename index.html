@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.1 Letter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="stage" aria-label="双层擦除信纸页面">
+      <section class="letter-layer" aria-label="褶皮信纸">
+        <div class="letter-shadow"></div>
+        <article class="letter-paper">
+          <img class="paper-texture-img" src="./assets/wrinkled-letter-paper.png" alt="" />
+          <div class="crease crease-a"></div>
+          <div class="crease crease-b"></div>
+          <div class="crease crease-c"></div>
+          <div class="paper-grain"></div>
+
+          <div class="flower flower-daisy" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <i></i>
+          </div>
+          <div class="flower flower-gardenia" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <b></b>
+          </div>
+          <div class="flower flower-jasmine" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <i></i>
+          </div>
+
+          <img class="handwriting-ink" src="./assets/handwriting-ink.png" alt="手写祝福字迹" />
+        </article>
+      </section>
+
+      <section class="poster-layer" aria-label="剪影叙事海报">
+        <img class="hero-art" src="./assets/hero-anime-poster.png" alt="动漫水彩电影海报风人物" />
+        <div class="hero-vellum"></div>
+        <div class="hero-brush hero-brush-a"></div>
+        <div class="hero-brush hero-brush-b"></div>
+        <div class="hero-copy">
+          <p>6.1</p>
+          <h1>叶美琳</h1>
+          <span>愿勇敢长成大人的光，也一直守着小朋友的快乐。</span>
+        </div>
+      </section>
+
+      <canvas id="maskCanvas" class="mask-canvas" aria-hidden="true"></canvas>
+      <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
