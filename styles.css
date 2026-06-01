@@ -462,6 +462,10 @@ body {
   color: rgba(47, 43, 35, 0.56);
 }
 
+.hero-copy h1 span {
+  font-size: 0.5em;
+}
+
 .hero-copy span {
   display: block;
   max-width: 100%;
